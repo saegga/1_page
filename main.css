@@ -1,0 +1,326 @@
+
+@font-face {
+    font-family: 'Plakat';
+    src: url('fonts/a_PlakatCmpl-ExtraBold.eot?#iefix') format('embedded-opentype'),  
+    url('fonts/a_PlakatCmpl-ExtraBold.svg') format('svg'), 
+    url('fonts/a_PlakatCmpl-ExtraBold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background: url(img/back.png);
+    background-position-x: -1px;
+}
+h1{
+    font-family: 'Plakat', arial;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 85px;
+}
+.container{
+    width: 1230px;
+}
+.main{
+    padding-top: 100px;
+}
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #b3ede6;
+    font-weight: 700;
+}
+.laptop{
+    width: 100%;
+    margin-top: -80px;
+}
+#count_cap{
+   
+}
+#count_cap .start,
+#cost_arenda .start{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: -3px;
+    background: #7ec7be;
+    border: 1px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#count_cap .start:before,
+#cost_arenda .start:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    z-index: 10;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#count_cap .end{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    right: -3px;
+    background: #7ec7be;
+    border: 1px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#count_cap .end:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    z-index: 10;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_count{
+    position: relative;
+}
+.ui-slider{
+    background-color: #9fa2a4;
+    background-color: rgba(159,162,164, 0.5);
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.ui-slider-range{
+    background-color: #7ec7be;
+    height: 14px;
+}
+.ui-slider-handle{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: -3px;
+    background: #7ec7be;
+    border: 1px solid #fff;
+    top: 50%;
+    transform: translate(-5px, -50%);
+    outline: none;
+}
+.ui-slider-handle:after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.min_cap, .max_cap{
+    position: absolute;
+    top: 25px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    user-select: none;
+}
+.min_cap{
+    left: 0;
+}
+.max_cap{
+    right: 0;
+}
+.tooltip_cup,
+.tooltip_cost{
+    position: absolute;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 26px;
+    top: 30px;
+    left: -5px;
+    user-select: none;
+}
+.container_count-cap{
+    margin-bottom: 80px;
+}
+.container_count-cost{
+
+}
+.slide_title{
+    font-family: "Open Sans";
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.result_block{
+    margin-top: 80px;
+}
+.result_block p{
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 30px;
+    color: #b3ede6;
+    font-weight: 700;
+}
+.block_buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.download_email{
+    box-shadow: 0 10px 0 rgb(143, 184, 64, 0.5);
+    background: #8fb840;
+    margin-right: 100px;
+}
+.download_email:hover,
+.download_vk:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.download_vk,
+.download_email{
+    font-size: 28px;
+    font-family: 'Plakat', arial;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 70px;
+    border-radius: 50px;
+
+    min-width: 420px;
+}
+.download_vk{
+    box-shadow: 0 10px 0 rgb(98, 128, 180, 0.5);
+    background: #6280b4;
+}
+
+/* форма */
+
+.popup_download{
+    width: 535px;
+    background: url(img/back.png);
+    background-position-x: -1px;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 70px;
+    -webkit-box-shadow:  1px 0px 15px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:     1px 0px 15px 0px rgba(0, 0, 0, 1);
+    box-shadow:         1px 0px 15px 0px rgba(0, 0, 0, 1);
+}
+.popup_download .close{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    background: url(img/close_form.png);
+    background-position: center center;
+    right: -10px;
+    top: -5px;
+    opacity: 1;
+}
+.form_container{
+    position: relative;
+    background: url(img/border_form.png) no-repeat;
+    background-size: contain;
+}
+.title_form{
+    padding-top: 45px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 27px;
+    text-align: center;
+    margin: 0;
+}
+.popup_download form{
+    padding: 0 30px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.inp_form{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    background: transparent;
+    margin-bottom: 25px;
+}
+.inp_form::-webkit-input-placeholder {color:#fff; } 
+.inp_form:-moz-placeholder {color:#fff; } 
+.inp_form::-moz-placeholder {color:#fff; } 
+.inp_form:-ms-input-placeholder {color:#fff; }
+
+.inp_form:focus{
+    outline: none;
+    border: 1px solid #fff;
+}
+.submit{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Plakat', arial;
+    font-weight: 900;
+    font-size: 28px;
+    cursor: pointer;
+    background: #8fb840;
+    box-shadow: 0 10px 0 rgb(143, 184, 64, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+.no-spam{
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Open Sans";
+    padding-bottom: 20px;
+}
+#downloadmail{
+    display: none;
+}
+.fancybox-content{
+    background: unset;
+}
+@media(max-width: 991px){
+    h1{
+        padding: 0 35px;
+    }
+    body{
+        background-size: cover;
+    }
+    .laptop{
+        margin: 0;
+    }
+    .block_buttons{
+        flex-wrap: wrap;
+    }
+    .download_vk,
+    .download_email{
+        font-size: 22px;
+    }
+    .download_email{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
